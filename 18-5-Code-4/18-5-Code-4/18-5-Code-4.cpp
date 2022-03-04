@@ -1,8 +1,15 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
+
+using namespace std;
+
+void even
 
 int main()
 {
+	long long number;
 	int answer;
-	std::cout << "Hello World!\n";
+	cout << "Enter number: ";
+	cin >> number;
+
+	
 }
