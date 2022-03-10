@@ -4,11 +4,18 @@
 using namespace std;
 
 void swapvec(int *vect, int *arr) {
-	
+	int temp;
+	for (int i = 0; i < 6; i++) {
+		temp = *vect;
+		*vect = *arr;
+		*arr = temp;
+		++arr;
+		++vect;
+	}
 
 
-	cout << *vect << endl;
-	cout << *arr << endl;
+	*vect = 21;
+	*arr = 22;
 	cout <<  *(++ arr) << endl;
 	cout << *(++arr) << endl;
 	
@@ -17,9 +24,12 @@ void swapvec(int *vect, int *arr) {
 int main()
 {
 	vector <int> vect = { 1, 2, 3, 4, 5 };
+
+
+
 	int *ptr = vect.data();
-	int arr[] = { 6, 15, 8, 9, 10 };
-	swapvec(ptr, arr);
 	
-	cout << vect[0];
+	swapvec(ptr, arr);
+	cout << vect[0] << endl;
+	cout << arr[0] << endl;
 }
