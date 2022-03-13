@@ -22,26 +22,20 @@ int main()
 	for (int i = 0; i < 6; i++) {
 		cout << arr[i] << endl;
 	}
-
 	cout << "Vector before swap: " << endl;
 	for (int i = 0; i < 6; i++) {
 		cout << vect[i] << endl;
 	}
-	
 	int *ptr = vect.data();
 	swapvec(ptr, arr);
-	
 	cout << " ---- Swapping -----" << endl;
-
 	cout << "Array after swap: " << endl;
 	for (int i = 0; i < 6; i++) {
 		cout << arr[i] << endl;
 	}
-	
 	cout << "Vector after swap: " << endl;
 	for (int i = 0; i < 6; i++) {
 		cout << vect[i] << endl;
 	}
-	
 	return 0;
 }
